@@ -29,3 +29,42 @@ sum(ListaComElementos) # retorna a soma de todos os elementos
 
 print(sum(ListaComElementos))
 sorted(ListaComElementos) # retorna a lista em ordem crescente
+
+ListaVazia.append(1) # adiciona um elemento
+ListaVazia.append("Texto")
+ListaVazia.append(True)
+
+ListaVazia.insert(2,"Novo elemento") #adiciona elemento no indicie 2
+print(ListaVazia)
+
+ListaVazia.remove("Texto") # remove o primeiro elemento encontrado
+print(ListaVazia)
+
+print(ListaVazia.pop(0))
+print(ListaVazia)
+
+print(ListaVazia.index("Novo elemento"))
+
+ListaNacoes = ["Brasil", "Eua", "China", "Canada", "Inglaterra"]
+
+print(ListaNacoes.count("Eua"))
+
+novalista = ListaNacoes.copy()
+print(novalista)
+
+temElemento = "Canada" in novalista
+print(temElemento)
+
+while True:
+    if "Brasil" in ListaNacoes:
+        print("Descobri o Brasil!")
+        ListaNacoes.remove("Brasil")
+    elif "Inglaterra" in ListaNacoes:
+        print("fui para a Inglaterra")
+        ListaNacoes.remove("Inglaterra")
+    else:
+        print("Nada encontrado")
+    break        
+
+
+
