@@ -11,7 +11,7 @@ dicionario["Região"] = "Sudeste"
 print(dicionario)
 print(dicionario["Cidade"])
 print(dicionario.get("Estado"))
-print(dicionario.get("ChaveInexistente"))
+print(dicionario.get("ChaveIne+xistente"))
 print(dicionario.get("ChaveInexistente", "Valor alternativo se chave não existir"))
 
 frutas = {
