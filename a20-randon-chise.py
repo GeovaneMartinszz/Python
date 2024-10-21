@@ -15,4 +15,4 @@ sair = "n"
 while sair != "s":
    random.shuffle(nomes)
    print(nomes)
-   sair = input("sair ditite s: ")
+   sair = input("sair digite s: ")
