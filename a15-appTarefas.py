@@ -8,8 +8,8 @@ def adicionar_tarefa():
    tarefa = entry_tarefa.get()
    if tarefa:
       tarefas.append({"tarefa": tarefa, "data": datetime.now()})
-      listbox_tarefas.insert(tk.END, f"{tarefa} - {datetime.now().strftime('%d/%m/%y/%H:%M')}")
-      messagebox.showinfo("Minhas tarefas", tarefas)
+      listbox_tarefas.insert(tk.END, f"{tarefa} - {datetime.now().strftime('%d/%m/%Y/%H:%M')}")
+      # messagebox.showinfo("Minhas tarefas", tarefas)
 
       entry_tarefa.delete(0, tk.END)
    else:
@@ -20,7 +20,7 @@ def concluir_tarefa():
    if indice_selecionado:
       tarefa_concluida = tarefas.pop(indice_selecionado[0])
       listbox_tarefas.delete(indice_selecionado)
-      messagebox.showinfo("Concluido", f"Tarefa \"{tarefa_concluida}\" Concluida.")      
+      messagebox.showinfo("Concluido", f"Tarefa \"{tarefa_concluida['tarefa']}\" Concluida.")      
       
 def funcao():
     entrada = entry_tarefa.get()
