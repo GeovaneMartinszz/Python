@@ -68,7 +68,19 @@ jogar_dados()
 # 3. PAR OU ÍMPAR
 # Desenvolva uma função onde o usuário joga par ou impar contra o computador. O usuário digita "par" ou digita "impar" e o programa diz quem ganhou.
 def par_ou_impar():
-    print("Digite seu código aqui. Exclua esta linha")
+    escolha = input("Escolha 'par' ou 'impar': ")
+    if escolha not in ['par', 'inpar']:
+        print("Escolha invalida")
+    else:
+        break
+
+numero_usuario = int(input("Escolha um numero entre 0 e 5: "))
+numero_computador = random.randint(0, 5)
+soma = numero_usuario + numero_usuario
+resultado = "Par" if soma % 2 == 0 else "Impar"
+
+
+print()
 
 # Chama a função para executar o jogo
 par_ou_impar()
